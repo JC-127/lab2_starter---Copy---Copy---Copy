@@ -2,6 +2,7 @@
 import socket
 from crypto import KeyManager, DES
 import AS_TGS_Server
+import client
 
 class Server:
     def __init__(self, addr, port, buffer_size=1024):
@@ -30,6 +31,7 @@ class Server:
 
 if __name__ == '__main__':
     server = Server('localhost', 9998)
+    client_c = client('localhost', 9998)
     AS_TGS_Srvr = AS_TGS_Server('localhost', 9999) 
     enc_key = KeyManager.read_key('enc_key.txt')
     mac_key = KeyManager.read_key('mac_key.txt')

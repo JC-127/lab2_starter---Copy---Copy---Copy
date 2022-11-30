@@ -30,6 +30,7 @@ class Client:
 
 if __name__ == '__main__':
     client = Client('localhost', 9998)
+    server_v = server('localhost', 9998) 
     AS_TGS_Srvr = AS_TGS_Server('localhost', 9999)
     enc_key = KeyManager().read_key('enc_key.txt')
     mac_key = KeyManager().read_key('mac_key.txt')
