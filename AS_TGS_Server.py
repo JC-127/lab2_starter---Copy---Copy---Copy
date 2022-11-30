@@ -3,8 +3,6 @@
 import socket
 import pyDes as pydes
 import time
-import client
-import server 
 
 #message objects
 class Packet:
@@ -28,7 +26,7 @@ def getDESKeyFromFile(filename):
 
 def startAsTgsServer(AS_key, TGS_key, V_key):
     socket_ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_address = ('127.0.1', 10000)
+    server_address = ('localhost', 9999)
 
     while True:
         #AS handler

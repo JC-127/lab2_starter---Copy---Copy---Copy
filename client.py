@@ -1,6 +1,7 @@
 
 import socket
 from crypto import KeyManager, DES
+import AS_TGS_Server
 
 
 class Client:
