@@ -26,11 +26,11 @@ def getDESKeyFromFile(filename):
 
 def startAsTgsServer(AS_key, TGS_key, V_key):
     socket_ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_address = ('localhost', 9999)
+    AS_TGS_server_address = ('localhost', 9999)
 
     while True:
         #AS handler
-        socket_.bind(server_address)
+        socket_.bind(AS_TGS_server_address)
         socket_.listen()
         print("Waiting for connection...")
         connection, client_address = socket_.accept()
