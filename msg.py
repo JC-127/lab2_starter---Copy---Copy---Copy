@@ -36,9 +36,9 @@ ID_v = "CIS3319SERVERID".encode()
 ID_tgs = "CIS3319TGSID".encode()
 
 #Lab 6 Hard code variables
-IDCA = ""
-IDServer = ""
-IDClient = ""
+ID_CA = ""
+ID_Server = ""
+ID_Client = ""
 IP_c = '127.0.0.1'
 Port_c = '5000'
 req = "memo"
