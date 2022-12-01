@@ -35,6 +35,16 @@ ID_c = "CIS3319USERID".encode()
 ID_v = "CIS3319SERVERID".encode()
 ID_tgs = "CIS3319TGSID".encode()
 
+#Lab 6 Hard code variables
+IDCA = ""
+IDServer = ""
+IDClient = ""
+IP_c = '127.0.0.1'
+Port_c = '5000'
+req = "memo"
+data = "take cis3319 class this morning"
+Lifetime_Session = 86400
+
 # Keys
 K_c = get_random_bytes(BLOCK_SIZE)
 K_tgs = get_random_bytes(BLOCK_SIZE)
